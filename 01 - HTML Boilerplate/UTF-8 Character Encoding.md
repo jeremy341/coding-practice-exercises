@@ -1,9 +1,12 @@
 UTF-8, or UCS Transformation Format 8, is a standardized character encoding widely used on the web. Character encoding is the method computers use to store characters as data. Essentially, all text on a web page is a sequence of characters stored as one or more bytes. In computing, a byte is a unit of data consisting of 8 bits, or binary digits. UTF-8 supports every character in the Unicode character set - and this includes characters and symbols from all writing systems, languages, and technical symbols. Here is an example of using the meta element with the charset attribute to set the character encoding to UTF-8:
 
+```html
 <meta charset="UTF-8" />
+```
 
 By setting the character encoding to UTF-8, it will ensure that the accented "e" character (é) is displayed correctly on the page. Here is an extended code example of using the UTF-8 character encoding:
 
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,6 +18,6 @@ By setting the character encoding to UTF-8, it will ensure that the accented "e"
     <p>Café</p>
   </body>
 </html>
+```
 
 For each new project you create, you should include this meta element with the charset attribute set to UTF-8.
-

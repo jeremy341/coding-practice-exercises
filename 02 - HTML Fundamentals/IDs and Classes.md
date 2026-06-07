@@ -4,13 +4,16 @@ Here is an example of an h1 element with an id of title.
 
 Below the h1 element, add an h2 element with an id set to "subtitle". You can write whatever text you like for the h2 and you will see the changes in the preview window. To interact with the example, you will need to enable the interactive editor.
 
+```html
 <h1 id="title">Movie Review Page</h1>
 <h2 id="subtitle">A personal take on the greatest movie of all time.</h2>
+```
 
 You can reference the id name of title within your JavaScript or CSS. Here's a CSS example referencing the id of title to change the text color to red.
 
-NOTE: Some CSS has been provided for you in this interactive example. Don't worry about trying to understand the CSS code because you will learn more about that in future lessons. But if you want to see the text color change to blue, enable the interactive editor, click on the styles.css tab and change the color: red; to color: blue;.
+NOTE: Some CSS has been provided for you in this interactive example. Don't worry about trying to understand the CSS code because you will learn more about that in future lessons. But if you want to see the text color change to blue, enable the interactive editor, click on the styles.css tab and change the `color: red;` to `color: blue;`.
 
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,14 +28,19 @@ NOTE: Some CSS has been provided for you in this interactive example. Don't worr
     <h1 id="title">Movie Review Page</h1>
   </body>
 </html>
+```
 
+```css
 #title {
   color: red;
 }
+```
 
 The hash symbol (#) in front of title, tells the computer you want to target an id with that value. id names should not be used more than once, and they should always be unique. Another thing to note about id values, is that they cannot have spaces in them. Here is an example of applying the words main and heading to an id attribute value:
 
+```html
 <h1 id="main heading">Main heading</h1>
+```
 
 Browsers will see this space as part of the id, which will lead to unwanted issues when it comes to styling and scripting. ID attribute values should only contain letters, digits, underscores, and dashes.
 
@@ -40,15 +48,19 @@ In contrast to the id attribute, the class attribute value does not need to be u
 
 Here is an example of applying a class called box to a div element:
 
-<div class="box"></div> 
+```html
+<div class="box"></div>
+```
 
 If you want to add multiple classes to an element, you can do so by separating the names with a space. Here is an updated example applying multiple classes to multiple div elements.
 
+```html
 <div class="box red-box"></div>
+```
 
 Here is another example of applying multiple classes to multiple div elements.
 
-
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -66,7 +78,9 @@ Here is another example of applying multiple classes to multiple div elements.
     <div class="box blue-box"></div>
   </body>
 </html>
+```
 
+```css
 .box {
   width: 100px;
   height: 100px;
@@ -79,5 +93,6 @@ Here is another example of applying multiple classes to multiple div elements.
 .blue-box {
   background-color: blue;
 }
+```
 
 So, to recap, when should you use an id versus a class? Classes are best used when you want to apply a set of styles to many elements. If you want to target a specific element, it is best to use id because those values need to be unique.
